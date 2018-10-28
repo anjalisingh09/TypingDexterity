@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Typing King</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="typingGame.css"><!-- css/style.css -->
+<link rel="icon" href="css/favicon.png" type="image/png">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="typingGame.js"></script><!-- js/typing.js -->
+
+  <link rel="icon" type="image/ico" href="logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+ -->
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#"><span><img src="logo.png" height="70px"></span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html" style="font-family: 'Anton', sans-serif;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tutorial.html" style="font-family: 'Anton', sans-serif;">Tutorial</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="tygame.html" style="font-family: 'Anton', sans-serif;">Practice</a>
+      </li>
+    </ul>
+     <ul class="navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="login.html" style="font-family: 'Anton', sans-serif;">Signup<i class="fas fa-user-plus"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html" style="font-family: 'Anton', sans-serif;">login<i class="fas fa-user"></i></a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav> 
+<div class="centerDiv" style="background-color: rgb(66, 176, 206);">
+
+  <div class="headerDiv">
+    <a class="header" style="font-family: 'Anton', sans-serif;">Typing Game</a>
+    <a style="font-family: 'Anton', sans-serif;">Are you the next typing king?</a>
+  </div>
+
+  <div class="centerDiv">
+    <a class="textToType" id="currentWord"></a>
+    <input class="textfield" id="wordField" placeholder="Your input"/>
+    <a class="button" id="startBtn" style="font-family: 'Anton', sans-serif;">Start</a>
+    <a id="timer"></a>
+    <a id="wpm"></a>
+    <a id="corrections"></a>
+    <a id="errors"></a>
+  </div>
+
+</div><br><br><br>
+<footer style="background:url('keys.png'); height: 230px; ">
+                <br><br><br>
+                <br>
+</footer>
+</body>
+</html>

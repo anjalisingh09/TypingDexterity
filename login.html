@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login|Sign-up|TypingDexterity</title>
+<link href="login.css" type="text/css" rel="stylesheet"/>
+<link rel="icon" type="image/ico" href="logo.png">
+<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<!-- <link rel="stylesheet" type="text/css" href="link.css"> -->
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="home.css"> -->
+<link rel="stylesheet" type="text/css" href="login1.css">
+<script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+<script type="text/javascript">
+function show_signup()
+{
+ $("#login_div").fadeOut('fast', function() {
+  $("#register_div").fadeIn();
+ });
+}
+function show_login()
+{
+ $("#register_div").fadeOut('fast', function() {
+  $("#login_div").fadeIn();
+ });
+}
+
+
+</script>
+</head>
+<body style="background-color: ">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#"><span><img src="logo.png" height="70px"></span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html" style="font-family: 'Anton', sans-serif;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tutorial.html" style="font-family: 'Anton', sans-serif;">Tutorial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tygame.html" style="font-family: 'Anton', sans-serif;">Practice</a>
+      </li>
+    </ul>
+     <ul class="navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="login.html" style="font-family: 'Anton', sans-serif;">Signup<i class="fas fa-user-plus"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html" style="font-family: 'Anton', sans-serif;">login<i class="fas fa-user"></i></a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav> 
+<div id="wrapper">
+
+<section id="login_div">
+ <div class="container">
+        <div class="main sign-in">
+            <div class="card">
+                <div class="logo">
+
+                </div>
+                <div class="card-head">
+                    <h3 class="header">Sign In</h3>
+                </div>
+                <div class="card-body">
+                    <form id="frmLogin" action="tutorial.html">
+                        <div class="form-group">
+                            <label class="form-label">Username</label>
+                            <input class="form-control" name="username" id="txtUsername" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">password</label>
+                            <input class="form-control" name="password" id="txtPassword" type="password" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn" id="btnSignIn" onclick="checkform()">Sign In</button>
+                            <!-- <input type="submit" name="submit" value="Sign In" href="tutorial.html"> -->
+                        </div>
+                      
+                    </form>
+                </div>
+              <div class="card-footer">
+                        <span> <a href="#">   forget password?</a></span>
+                         <p class="change_link">Don't have account?<input type="button" onclick="show_signup();" value="sign up"></p>
+                        </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="register_div">
+ <div class="container">
+        <div class="main sign-in">
+            <div class="card">
+                <div class="logo">
+
+                </div>
+                <div class="card-head">
+                    <h3 class="header">Sign Up</h3>
+                </div>
+                <div class="card-body">
+                    <form id="frmLogin" action="typing.html">
+                        <div class="form-group">
+                            <label class="form-label">Username</label>
+                            <input class="form-control" name="username" id="txtUsername" type="text" required>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label">Enter Your Email</label>
+                          <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">password</label>
+                            <input class="form-control" name="password" id="txtPassword" type="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Confirm password</label>
+                            <input class="form-control" name="password" id="txtPassword" type="password" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn" id="btnSignIn" href="login.html">Sign Up</button>
+                        </div>
+                      
+                    </form>
+                </div>
+              <div class="card-footer">
+                         <p class="change_link">Already a member?<input type="button" onclick="show_login();" value="log in"></p>
+                        </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+<footer style="background:url('keys.png'); height: 230px; ">
+  <p style="margin-left:40%; color: Black;">&copy; Copyright 2018 TypingDExterity.com</p>
+  
+                <br>
+</footer>
+</body>
+</html>

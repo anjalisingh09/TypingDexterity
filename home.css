@@ -1,0 +1,65 @@
+.circleDesign{
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			/*border: 2px solid black;*/
+			margin-top: 40px;
+			float: right;
+			margin-right: 20px;
+/*			background: black;*/
+		}
+		.div1{
+			float: left;
+			height: 500px;
+			width: 500px;
+			border: 2px solid black;
+			margin-top: 40px;
+			margin-left: 20px;
+			border-radius: 30px;
+      color: blue;
+		}
+    .first{
+      /*border-bottom-right-radius: 100px;*/
+     /* border: 2px solid black;*/
+     /* border-bottom: 50px;*/
+      height: 200px;
+      background-color: rgb(66, 176, 206);
+      width: 100%;
+    }
+    .second{
+      height: 300px;
+      width: 95%;
+      border-top-right-radius: 100%;
+      background-color: rgb(66, 176, 206);
+      transform: rotate(-10deg);
+      border-bottom-left-radius: 30px;
+    }
+
+    .third{
+      transform: translate(50px,50px);
+      /*transform: rotate(20deg);*/
+      color: white;
+    }
+    .fourth{
+      /*border:2px solid black;*/
+      transform: rotate(-5deg);
+      height: 300px;
+      width: 650px;
+      float: right;
+      margin-right: 1px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+    .frame {
+    border-radius: 30px;
+    background-color:lightgreen /*#f2f2f2*/;
+    /*padding: 20px;*/
+    width:100%;
+    height:300px;
+    /*background-color: lightgreen*//* rgba(0,0,100,0.2)*/;
+    margin-top: 500px;
+    /*transform: rotate(-10deg);*/
+}
+.jumbo{
+  margin-top: 250px;
+  }
